@@ -1,0 +1,23 @@
+augment:
+  crop_size:
+  - 368
+  - 496
+  do_flip: true
+  max_scale: 1.0
+  min_scale: -0.1
+data:
+  root: training/datasets/FlyingChairs/data
+  split_txt: training/datasets/FlyingChairs/FlyingChairs_train_val.txt
+logdir: training/logs
+model:
+  iters: 32
+  iters_pred: 32
+train:
+  batch_size: 1
+  clip_norm: 1
+  epochs: 12
+  learning_rate: 0.0004
+  weight_decay: 0.0001
+visualize:
+  choose_random: true
+  num_visualize: 4
